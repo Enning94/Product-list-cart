@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
-    mode: 'development',
+  mode: 'development',
   entry: './src/index.js',
   devServer: {
     static: './dist',
@@ -13,8 +13,8 @@ module.exports = {
       template: './src/index.html',
     }),
     new MiniCssExtractPlugin({
-        filename: '[name].[contenthash].css',
-      }),
+      filename: '[name].[contenthash].css',
+    }),
   ],
   module: {
     rules: [

@@ -1,0 +1,22 @@
+* {
+  padding: 0;
+  margin: 0;
+
+  /* background-color: red */
+}
+
+nav {
+  display: flex;
+}
+
+.btn-primary {
+  position: relative;
+  top: -10px;
+  text-align: center;
+  border-color: #ff6347; /* Example custom border color */
+  color: #fff; /* Example custom text color */
+}
+
+.cart-price-wrapper {
+  gap: 10px;
+}
