@@ -20,6 +20,7 @@ nav {
 .cart-price-wrapper {
   gap: 10px;
 }
-.add-to.cart{
-    color: #ff6347;
+
+.add-to.cart {
+  color: #ff6347;
 }
