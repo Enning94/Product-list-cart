@@ -1,5 +1,4 @@
 // Handles fetching and managing product data.
-
 // productService.js
 const productService = {
   async getProducts() {
