@@ -22,7 +22,7 @@
     <title>Frontend Mentor | Product list with cart</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
+    <!-- <style>
       .attribution {
         font-size: 11px;
         text-align: center;
@@ -30,7 +30,7 @@
       .attribution a {
         color: hsl(228, 45%, 44%);
       }
-    </style>
+    </style> -->
   </head>
   <body>
     <main>
@@ -72,62 +72,11 @@
         </nav>
       </header>
       <section>
-        <div>
+        <div id="product-list">
           <h1>Desserts</h1>
-          <div class="card">
-            <div>
-              <img
-                src="../assets/images/image-tiramisu-mobile.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="btn-primary">
-                <button class="add-to-cart-btn">Add to Cart</button>
-              </div>
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Waffle</h5>
-              <p class="card-text">Waffle with Berries</p>
-              <p>$6.50</p>
-            </div>
+          <div id="card-container">
+            
           </div>
-          <div class="card">
-            <div>
-              <img
-                src="../assets/images/image-tiramisu-mobile.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="btn-primary">
-                <button class="add-to-cart-btn">Add to Cart</button>
-              </div>
-            </div>
-
-            <div class="card-body">
-              <h5 class="card-title">Waffle</h5>
-              <p class="card-text">Waffle with Berries</p>
-              <p>$6.50</p>
-            </div>
-          </div>
-          <div class="card">
-            <div>
-              <img
-                src="../assets/images/image-tiramisu-mobile.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="btn-primary">
-                <button class="add-to-cart-btn">Add to Cart</button>
-              </div>
-            </div>
-
-            <div class="card-body">
-              <h5 class="card-title">Waffle</h5>
-              <p class="card-text">Waffle with Berries</p>
-              <p>$6.50</p>
-            </div>
-          </div>
-        </div>
         <div class="cart-container">
           <h2>Your Cart(2)</h2>
           <div class="item-container py-3 d-flex flex-column">
@@ -142,7 +91,7 @@
                 </div>
               </div>
               <div class="pt-3">
-                <button>
+                <button type= "button">
                   <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="none" viewBox="0 0 10 10">
                     <path fill="#CAAFA7" d="M8.375 9.375 5 6 1.625 9.375l-1-1L4 5 .625 1.625l1-1L5 4 8.375.625l1 1L6 5l3.375 3.375-1 1Z"/>
                   </svg>
@@ -160,7 +109,7 @@
                 </div>
               </div>
               <div class="pt-3">
-                <button>
+                <button type= "button">
                   <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="none" viewBox="0 0 10 10">
                     <path fill="#CAAFA7" d="M8.375 9.375 5 6 1.625 9.375l-1-1L4 5 .625 1.625l1-1L5 4 8.375.625l1 1L6 5l3.375 3.375-1 1Z"/>
                   </svg>
@@ -179,7 +128,7 @@
             <p>This is a carbon-neutral delivery</p>
           </div>
           <div class="p-5 text-center">
-            <button>
+            <button type= "button">
               Confirm Order
             </button>
           </div>
