@@ -11,16 +11,58 @@ nav {
 
 .btn-primary {
   position: relative;
-  top: -10px;
+  background-color: beige;
+  border:1px solid black;
+  top: -30px;
   text-align: center;
-  border-color: #ff6347; /* Example custom border color */
-  color: #fff; /* Example custom text color */
+
+
+  border-radius: 2rem;
+  color: #fff; 
 }
 
 .cart-price-wrapper {
   gap: 10px;
 }
 
-.add-to.cart {
-  color: #ff6347;
+.add-to-cart-btn {
+  border: none;
+  font-size: 1rem;
+  border-radius: 2rem;
+
+    /* flex: 1; Allow button to grow to fill remaining space */
+    border: none;
+    background-color: transparent;
+    /* font-size: 14px; Initial font size */
+    /* white-space: nowrap; Prevent text from wrapping */
+    /* overflow: hidden; Hide overflowed content */
+    /* text-overflow: ellipsis; Show ellipsis (...) if text exceeds button width */
+    /* resize: horizontal; Allow resizing horizontally */
+    /* min-width: 0; */
+    flex-shrink: inherit;
+    flex-shrink: calc();
 }
+
+.btn-wrapper{
+
+  margin: 0 auto; 
+  width: 30%;
+      background-color: #f0f0f0;
+      border-radius: 2rem;
+      display: flex;
+      padding: 1rem;
+      /* flex-direction: column; */
+      /* align-items: center; */
+      justify-content: center;
+      /* gap: 12rem; */
+      
+   
+
+}
+/* .cartIcon-wrapper{
+  width: 30px;
+} */
+
+/* .card-body{
+  background-color: red;
+} */
