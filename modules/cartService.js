@@ -8,7 +8,9 @@ function saveCartItems() {
 
 export function loadCartItems() {
   const storedCartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
-  populateCartItems(storedCartItems);
+  cartItems.length = 0;
+  cartItems.push(...storedCartItems);
+  populateCartItems(cartItems);
 }
 export function updateButtonText(productName) {
   const productElement = Array.from(document.querySelectorAll('.card')).find(
@@ -22,13 +24,7 @@ export function updateButtonText(productName) {
 
     if (btnElement && cartItem) {
       btnElement.innerHTML = '';
-      btnElement.classList.add(
-        'active-btn',
-        'd-flex',
-        'justify-content-between',
-        'align-items-center',
-        'px-3',
-      );
+      btnElement.classList.add('active-btn', 'd-flex', 'justify-content-between', 'align-items-center', 'px-3');
 
       const increaseDivWrapper = document.createElement('div');
       increaseDivWrapper.classList.add('SVG-style', 'fs-5');
@@ -61,13 +57,7 @@ export function updateButtonText(productName) {
             cartItems.splice(index, 1);
             btnElement.innerHTML = '';
 
-            btnElement.classList.remove(
-              'active-btn',
-              'd-flex',
-              'justify-content-between',
-              'align-items-center',
-              'px-3',
-            );
+            btnElement.classList.remove('active-btn', 'd-flex', 'justify-content-between', 'align-items-center', 'px-3');
 
             // Create default button content
             const cartIconDiv = document.createElement('div');
