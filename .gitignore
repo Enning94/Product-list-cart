@@ -1,0 +1,5 @@
+#Ignore Design Files 
+design
+
+#Ignore Node_Modules
+node_modules
